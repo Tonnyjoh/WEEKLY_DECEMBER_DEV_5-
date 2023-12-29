@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      var customFont = new FontFace(
+        "flappy",
+        'url(FlappyBirdy.ttf) format("truetype")'
+      );
+      customFont
+        .load()
+        .then(function (loadedFace) {
+          document.fonts.add(loadedFace);
+        })
+        .catch(function (error) {
+          console.log("Erreur de chargement de la police :", error);
+        });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <img id="backG" src="back.jpg" alt="Fond" />
+      <canvas id="flappyCanvas"></canvas>
+      <form id="form">
+        <input type="radio" id="easy" name="level" value="easy" checked />
+        <label for="easy">Easy</label>
+
+        <input type="radio" id="medium" name="level" value="medium" />
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="hard" name="level" value="hard" />
+        <label for="hard">Hard</label>
+      </form>
+      <div id="div-start">
+        <button id="startGame">Start</button>
+      </div>
+      <div id="restartButton" style="display: none">
+        <h2>Game Over</h2>
+        <button>Restart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

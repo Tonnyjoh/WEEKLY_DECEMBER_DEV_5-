@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "flappy";
+  src: url("FlappyBirdy.ttf") format("truetype");
+}
+body {
+  padding: auto;
+  overflow-y: hidden;
+  padding-top: 20vh;
+}
+#container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 65vh;
+  height: 100vh;
+  overflow-y: hidden;
+}
+#div-start {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+canvas {
+  display: none;
+}
+img {
+  display: block;
+}
+button {
+  padding: 5px;
+  font-size: 30px;
+  font-family: "flappy";
+}
+form {
+  margin-left: 18vh;
+}
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: "flappy";
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+input[type="radio"] + label:hover {
+  background-color: #f5f5f5;
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgba(149, 229, 30, 0.571);
+}
+input[type="radio"]:active + label {
+  border: 1px solid #aaa;
+}
+h2 {
+  position: absolute;
+  top: 16vh;
+  font-family: "flappy";
+  font-size: 45px;
+  color: red;
+  padding: 5px;
+}
+#restartButton button {
+  margin: auto;
+  display: block;
+}
