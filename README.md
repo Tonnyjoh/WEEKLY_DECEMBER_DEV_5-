@@ -1,4 +1,4 @@
 # WEEKLY_DECEMBER_DEV_5
 # 
-Only on desktop # 
+Only on desktop
 https://tonnyjoh.github.io/WEEKLY_DECEMBER_DEV_5-/
